@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heshima ya Mke kwa Mume</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg,#fff7f0,#ffe5cc);
+  color: #333;
+  line-height: 1.8;
+}
+
+header {
+  background: linear-gradient(135deg, orange, #ff6600);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #ff6600;
+}
+
+button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.qa {
+  margin-top: 10px;
+  display: none;
+  background: #fff3e6;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+  color: #ff6600;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Heshima ya mke kwa mume haidaiwi kwa nguvu—hujengwa kwa mwenendo wa mume</h1>
+<p>Biblia inaonyesha wazi kuwa mwanaume anapofanya wajibu wake kwa usahihi, mke “huona” na kujibu kwa heshima.</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<pre id="content" style="white-space: pre-wrap;"></pre>
+</div>
+
+<div class="card">
+<h2>Maswali ya Kujadili na Majibu</h2>
+
+<div>
+<p><b>1. Kwa nini heshima ya mke haitakiwi kudaiwa kwa nguvu?</b></p>
+<button onclick="toggle(0)">Onesha Jibu</button>
+<div class="qa">Kwa sababu heshima ya kweli hutokana na mwenendo wa mume, sio kulazimishwa.</div>
+</div>
+
+<div>
+<p><b>2. Upendo wa sadaka unamaanisha nini?</b></p>
+<button onclick="toggle(1)">Onesha Jibu</button>
+<div class="qa">Ni kujitoa kikamilifu kwa ustawi wa mke bila ubinafsi.</div>
+</div>
+
+<div>
+<p><b>3. Uongozi wa mabavu una madhara gani?</b></p>
+<button onclick="toggle(2)">Onesha Jibu</button>
+<div class="qa">Huzaa hofu na kupunguza heshima ndani ya ndoa.</div>
+</div>
+
+<div>
+<p><b>4. Kwa nini kusikiliza ni muhimu katika uongozi?</b></p>
+<button onclick="toggle(3)">Onesha Jibu</button>
+<div class="qa">Husaidia kufanya maamuzi ya hekima na kujenga ushirikiano.</div>
+</div>
+
+<div>
+<p><b>5. Ni kwa namna gani mume anaweza kumheshimu mke?</b></p>
+<button onclick="toggle(4)">Onesha Jibu</button>
+<div class="qa">Kwa maneno, matendo, na namna anavyomtambulisha kwa watu.</div>
+</div>
+
+<div>
+<p><b>6. Kwa nini uwepo wa mume ni muhimu kuliko pesa?</b></p>
+<button onclick="toggle(5)">Onesha Jibu</button>
+<div class="qa">Kwa sababu mwanamke anahitaji upendo na umakini wa karibu zaidi.</div>
+</div>
+
+<div>
+<p><b>7. Ni nini kinatokea ndoa inapodhoofika kimahusiano?</b></p>
+<button onclick="toggle(6)">Onesha Jibu</button>
+<div class="qa">Heshima hupungua na mahusiano yanakuwa dhaifu.</div>
+</div>
+
+<div>
+<p><b>8. Mwanaume ana jukumu gani katika amani ya nyumba?</b></p>
+<button onclick="toggle(7)">Onesha Jibu</button>
+<div class="qa">Yeye ndiye mtengeneza mazingira ya utulivu na usalama.</div>
+</div>
+
+<div>
+<p><b>9. Kwa nini uaminifu ni muhimu?</b></p>
+<button onclick="toggle(8)">Onesha Jibu</button>
+<div class="qa">Huimarisha heshima na kuondoa mashaka katika ndoa.</div>
+</div>
+
+<div>
+<p><b>10. Ujumbe mkuu wa mafundisho haya ni upi?</b></p>
+<button onclick="toggle(9)">Onesha Jibu</button>
+<div class="qa">Mwanaume ajijenge awe mtu wa kuheshimiwa badala ya kudai heshima.</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Imeandaliwa na Pastor Aloyce
+</div>
+
+<script>
+const data = `Heshima ya mke kwa mume haidaiwi kwa nguvu—hujengwa kwa mwenendo wa mume.
+
+Biblia inaonyesha wazi kuwa mwanaume anapofanya wajibu wake kwa usahihi, mke “huona” na kujibu kwa heshima.
+
+1. Mwanaume ampende mke kwa upendo wa sadaka (sio hisia tu)
+Andiko kuu: Waefeso 5:25
+“Waume, wapendeni wake zenu, kama Kristo naye alivyolipenda Kanisa…”
+Huu sio upendo wa maneno, bali wa kujitoa.
+Maana yake kwa vitendo:
+Kujitoa kwa ajili ya ustawi wake (kimwili, kihisia, kiroho)
+Kumweka mke kama kipaumbele (sio “akiba”)
+Kuacha ubinafsi
+👉 Mwanamke akiona anapendwa kweli, heshima yake huja kwa hiari, sio kwa kulazimishwa
+
+2. Mwanaume aongoze kwa upendo, sio kwa mabavu
+Andiko: Waefeso 5:23
+“Mume ni kichwa cha mke…”
+Lakini Biblia haikusema awe dikteta—inasema awe kama Kristo.
+Uongozi sahihi ni:
+Kuamua kwa hekima, si hasira
+Kusikiliza kabla ya kuamua (Methali 18:13)
+Kumshirikisha mke kwenye maamuzi
+👉 Uongozi wa mabavu huzaa hofu
+👉 Uongozi wa upendo huzaa heshima
+
+3. Mheshimu mke wako waziwazi
+Andiko: 1 Petro 3:7
+“Kaeni na wake zenu kwa akili… mkiwapa heshima…”
+Heshima inaonekana kwa:
+Namna unavyoongea naye (hakuna dharau)
+Namna unavyomtambulisha kwa watu
+Namna unavyomlinda kihisia
+👉 “ili maombi yenu yasizuiliwe”
+
+4. Mpe muda na umakini wa kweli
+Tatizo kubwa kwa wanaume wengi:
+👉 Wanatoa pesa lakini hawatoi uwepo wao
+Lakini ukweli ni huu:
+Mwanamke anahitaji uwepo wako zaidi ya mali zako
+Anataka ajisikie kuwa kipaumbele
+Vitendo:
+Zungumza naye bila simu
+Msikilize kwa makini
+Tengeneza muda wa familia
+
+5. Timiza wajibu wa ndoa kikamilifu
+Andiko: 1 Wakorintho 7:3
+“Mume atimize wajibu wake wa ndoa kwa mkewe…”
+Hii inahusisha:
+Mahitaji ya kihisia
+Mahitaji ya kimwili
+Mahitaji ya karibu (intimacy)
+👉 Ndoa inapodhoofika hapa, heshima hupungua pia
+
+6. Linda amani ya nyumba
+Andiko: Methali 17:1
+“Afadhali mkate mkavu kwa amani…”
+Mwanaume ndiye:
+Mtengeneza mazingira ya nyumba
+Chanzo cha usalama wa familia
+Ukali, kelele, dharau = hupunguza heshima
+Utulivu, hekima, upole = huijenga
+
+7. Kuwa mfano wa kiroho ndani ya familia
+Mwanaume ni:
+👉 Kuhani wa nyumba
+Hii ina maana:
+Kuongoza maombi ya familia
+Kufundisha Neno
+Kuishi unachohubiri
+👉 Mke akiona mwanaume ana msimamo wa kiroho, humheshimu kwa urahisi zaidi
+
+8. Thamini mchango wa mke wako
+Mke:
+Anajitoa kwa familia
+Anachoka kihisia na kimwili
+Mfano wa vitendo:
+Mshukuru
+Tambua juhudi zake
+Usimchukulie kama kawaida
+
+9. Kuwa mwaminifu na mwenye uwazi
+Heshima inavunjika haraka sana kwa:
+Uongo
+Usaliti
+Siri zisizo za lazima
+Lakini hujengwa kwa:
+Uaminifu
+Uwajibikaji
+Uwazi
+
+HITIMISHO 
+👉 Heshima ya mke sio kitu cha kudai, ni matokeo ya maisha ya mume.
+Kwa kifupi:
+Upendo huzaa heshima
+Uongozi wa upendo huzaa utiifu
+Heshima unayotoa ndiyo unayovuna
+Ujumbe wa moja kwa moja kwa wanaume wa Shiloh:
+👉 “Usitafute mke akuheshimu, jitengeneze uwe mtu wa kuheshimiwa.”
+
+Imeandaliwa na Pastor Aloyce`;
+
+document.getElementById("content").innerText = data;
+
+function toggle(i){
+  let items = document.getElementsByClassName("qa");
+  items[i].style.display = items[i].style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
